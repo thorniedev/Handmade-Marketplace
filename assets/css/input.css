@@ -1,5 +1,19 @@
-@config "../../tailwind.config.js";
+/* @config "../../tailwind.config.js"; */
+
+/* input.css */
 @import "tailwindcss";
 
+/* 1. Enable class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  /* 2. Custom Brand Colors */
+  --color-brand-clay: #d97757;
+  --color-brand-gold: #f4b942;
+  --color-brand-night: #0f172a;
+  --color-brand-cream: #fff8f1;
+  --color-brand-sand: #f6ede3;
+
+  /* 3. Custom Box Shadow */
+  --shadow-glow: 0 24px 90px rgba(217, 119, 87, 0.22);
+}
