@@ -1,0 +1,39 @@
+:root {
+  color-scheme: light;
+}
+
+.dark:root,
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", "Noto Sans Khmer", sans-serif;
+}
+
+.font-khmer {
+  font-family: "Noto Sans Khmer", sans-serif;
+}
+
+.glass-card {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.pattern-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(18px);
+  opacity: 0.6;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

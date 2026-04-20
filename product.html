@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View a Khmer handmade product detail page with a large image, product information, add to cart button, and related products."
+    />
+    <title>Product Detail | Sombok Craft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-[#fffaf5] text-slate-800 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+    <div class="min-h-screen overflow-x-hidden">
+      <div data-navbar></div>
+
+      <main data-product-page>
+        <section class="mx-auto max-w-7xl px-4 pb-12 pt-10 sm:px-6 lg:px-8 lg:pt-16">
+          <p class="text-sm font-semibold text-slate-500 dark:text-slate-400">
+            <a href="index.html" class="hover:text-orange-500">Home</a>
+            <span class="mx-2">/</span>
+            <a href="shop.html" class="hover:text-orange-500">Shop</a>
+            <span class="mx-2">/</span>
+            <span data-product-crumb class="text-orange-500">Krama Silk Scarf</span>
+          </p>
+
+          <div class="mt-6 grid gap-8 lg:grid-cols-[1.05fr,0.95fr] lg:items-start">
+            <div class="overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-glow dark:border-white/10 dark:bg-slate-900">
+              <img
+                data-product-image
+                src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80"
+                alt="Krama silk scarf large product image"
+                class="h-[360px] w-full object-cover sm:h-[460px] lg:h-[620px]"
+              />
+            </div>
+
+            <div class="rounded-[36px] border border-slate-200 bg-white p-8 shadow-xl shadow-orange-900/5 dark:border-white/10 dark:bg-slate-900 sm:p-10">
+              <p data-product-category class="text-sm font-bold uppercase tracking-[0.3em] text-orange-500">Handmade Silk</p>
+              <h1 data-product-title class="mt-3 text-4xl font-extrabold text-slate-950 dark:text-white sm:text-5xl">Krama Silk Scarf</h1>
+              <p data-product-price class="mt-4 text-3xl font-extrabold text-orange-500">$24</p>
+              <p data-product-description class="mt-6 text-base leading-8 text-slate-600 dark:text-slate-300">
+                A modern interpretation of the traditional Khmer krama, this scarf is handwoven with a soft
+                silk-cotton blend for everyday comfort. The warm earthy palette and lightweight texture make it
+                easy to style while still honoring Cambodian craft heritage.
+              </p>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-[24px] bg-orange-50 p-4 dark:bg-white/5">
+                  <p class="text-xs font-bold uppercase tracking-[0.3em] text-orange-500">Material</p>
+                  <p data-product-material class="mt-2 font-semibold text-slate-900 dark:text-white">Silk and cotton blend</p>
+                </div>
+                <div class="rounded-[24px] bg-orange-50 p-4 dark:bg-white/5">
+                  <p class="text-xs font-bold uppercase tracking-[0.3em] text-orange-500">Origin</p>
+                  <p data-product-origin class="mt-2 font-semibold text-slate-900 dark:text-white">Takeo, Cambodia</p>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-orange-500 hover:text-slate-950 dark:bg-orange-500 dark:text-slate-950 dark:hover:bg-orange-400 sm:w-auto"
+              >
+                Add to Cart
+              </button>
+
+              <div class="mt-8 rounded-[28px] border border-slate-200 bg-[#fffaf5] p-5 dark:border-white/10 dark:bg-slate-950">
+                <h2 class="text-lg font-bold text-slate-900 dark:text-white">Product Details</h2>
+                <div class="mt-4 grid gap-3 text-sm text-slate-600 dark:text-slate-300">
+                  <div class="flex items-center justify-between gap-4">
+                    <span>Size</span>
+                    <span data-product-size class="font-semibold text-slate-900 dark:text-white">180 cm x 60 cm</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <span>Care</span>
+                    <span data-product-care class="font-semibold text-slate-900 dark:text-white">Cold hand wash</span>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <span>Availability</span>
+                    <span data-product-availability class="font-semibold text-emerald-600 dark:text-emerald-300">In Stock</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+          <div class="rounded-[36px] border border-slate-200 bg-white p-8 shadow-xl shadow-orange-900/5 dark:border-white/10 dark:bg-slate-900 sm:p-10">
+            <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p class="text-sm font-bold uppercase tracking-[0.3em] text-orange-500">Related Products</p>
+                <h2 class="mt-3 text-3xl font-extrabold text-slate-950 dark:text-white sm:text-4xl">
+                  You may also like these artisan pieces
+                </h2>
+              </div>
+              <a href="shop.html" class="text-sm font-bold text-slate-900 transition hover:text-orange-500 dark:text-white">
+                View all
+              </a>
+            </div>
+            <div data-related-grid class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
+          </div>
+        </section>
+      </main>
+
+      <div data-footer></div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
